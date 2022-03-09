@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Board msg="Welcome to Your Vue.js App"/>
+    <Board />
   </div>
 </template>
 
@@ -17,7 +17,13 @@
 
 <style lang="scss">
   #app {
-    height: 100%;
     position: relative;
+    background-color: $gray2;
+
+    @include sizedBox(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 </style>
